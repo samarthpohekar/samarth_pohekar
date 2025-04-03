@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Adjust as needed */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -44,7 +44,7 @@ nav ul li a {
     text-decoration: none;
     color: #33ff33;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -52,18 +52,29 @@ nav ul li a:hover {
 }
 
 /* Main Content (Hero Section) */
-main.hero { /* Target the hero class */
+main.hero {
     width: 80%;
     max-width: 800px;
     margin: 50px auto;
     text-align: center;
-    padding: 50px 20px; /* Add padding for spacing */
+    padding: 80px 20px; /* Increased padding */
+}
+
+main.hero h2 {
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+main.hero p {
+    font-size: 1.1em; /* Slightly larger paragraph */
+    line-height: 1.8; /* Increased line height */
+    margin-top: 30px; /* Space above paragraph */
 }
 
 /* About and Recent Posts Section */
-.content-wrapper { /* Target the content-wrapper */
+.content-wrapper {
     display: flex;
-    justify-content: space-around; /* Use space-around for even spacing */
+    justify-content: space-between;
     align-items: flex-start;
     width: 80%;
     max-width: 900px;
@@ -72,25 +83,25 @@ main.hero { /* Target the hero class */
 
 .about-section,
 .recent-posts {
-    width: 45%;
+    width: 40%; /* Reduced width */
     text-align: left;
-    padding: 20px; /* Add padding for spacing */
+    padding: 20px;
 }
 
 .about-section h2,
 .recent-posts h2 {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 20px; /* Add margin for spacing */
+    margin-bottom: 20px;
 }
 
 .about-section p,
 .recent-posts ul {
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6;
 }
 
 .recent-posts li {
-    margin-bottom: 10px; /* Add spacing between list items */
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -98,17 +109,18 @@ footer {
     margin-top: 50px;
     font-size: 14px;
     text-align: center;
-    padding: 20px 0; /* Add padding for spacing */
-    border-top: 1px solid #222; /* Add a subtle divider */
+    padding: 20px 0;
+    border-top: 1px solid #222;
 }
 
 /* General Link Styling */
 a {
     color: #33ff33;
     text-decoration: none;
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: white; /* Consistent hover color */
+    color: white;
+    text-decoration: underline; /* Added underline for clarity */
 }
