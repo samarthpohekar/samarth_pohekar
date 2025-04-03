@@ -6,8 +6,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 /* Bordered Box for Content */
@@ -16,6 +15,8 @@ body {
     padding: 30px;
     border: 1px solid #00ff00;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;  /* Stacks items vertically */
 }
 
 /* Header */
@@ -36,7 +37,6 @@ header h1 {
 nav {
     display: flex;
     justify-content: flex-end;
-    flex-grow: 1;
 }
 
 .nav-menu {
@@ -44,6 +44,7 @@ nav {
     display: flex;
     gap: 20px;
     padding: 0;
+    margin: 0;
 }
 
 .nav-menu li {
@@ -69,19 +70,12 @@ main {
 .content-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
     margin-top: 20px;
 }
 
 .about-section,
 .recent-posts {
     width: 48%;
-}
-
-h2 {
-    color: #00ff00;
-    border-bottom: 1px solid #00ff00;
-    padding-bottom: 5px;
 }
 
 /* Footer */
@@ -93,6 +87,7 @@ footer {
     width: 100%;
     max-width: 900px;
 }
+
 
 
 a:hover {
