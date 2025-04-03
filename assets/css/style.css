@@ -7,6 +7,12 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Header */
 header {
     display: flex;
@@ -38,40 +44,53 @@ nav ul li a {
     text-decoration: none;
     color: #33ff33;
     font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 nav ul li a:hover {
     color: white;
 }
 
-/* Main Content */
-main {
+/* Main Content (Hero Section) */
+main.hero { /* Target the hero class */
     width: 80%;
     max-width: 800px;
     margin: 50px auto;
     text-align: center;
+    padding: 50px 20px; /* Add padding for spacing */
 }
 
 /* About and Recent Posts Section */
-.content {
+.content-wrapper { /* Target the content-wrapper */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* Use space-around for even spacing */
     align-items: flex-start;
     width: 80%;
     max-width: 900px;
     margin: 40px auto;
 }
 
-.about,
+.about-section,
 .recent-posts {
     width: 45%;
     text-align: left;
+    padding: 20px; /* Add padding for spacing */
 }
 
-.about h2,
+.about-section h2,
 .recent-posts h2 {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.about-section p,
+.recent-posts ul {
+    line-height: 1.6; /* Improve readability */
+}
+
+.recent-posts li {
+    margin-bottom: 10px; /* Add spacing between list items */
 }
 
 /* Footer */
@@ -79,13 +98,17 @@ footer {
     margin-top: 50px;
     font-size: 14px;
     text-align: center;
+    padding: 20px 0; /* Add padding for spacing */
+    border-top: 1px solid #222; /* Add a subtle divider */
 }
 
-
-
-
-
+/* General Link Styling */
+a {
+    color: #33ff33;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
 
 a:hover {
-    text-decoration: underline;
+    color: white; /* Consistent hover color */
 }
