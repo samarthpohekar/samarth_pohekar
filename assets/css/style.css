@@ -1,84 +1,120 @@
-/* Reset Defaults */
-* {
+/* General Page Styling */
+body {
+    background-color: black;
+    color: #33ff33;
+    font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Page Background */
-body {
-    font-family: "Courier New", monospace;
-    background-color: #0d0d0d;
-    color: #00ff00;
-    margin: 0;
-    padding: 0;
+/* Remove unwanted box */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
     font-size: 28px;
+    font-weight: bold;
 }
 
 /* Navigation Bar */
 nav {
-    display: flex;
+    text-align: right;
+    margin-top: -30px; /* Moves navigation up */
 }
 
-.nav-menu {
+nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    padding: 0;
 }
 
-.nav-menu li {
+nav ul li {
     display: inline;
+    margin-right: 20px;
 }
 
-.nav-menu a {
+nav ul li a {
     text-decoration: none;
-    color: #00ff00;
+    color: #33ff33;
     font-weight: bold;
 }
 
-.nav-menu a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    color: white;
 }
 
 /* Main Content */
 main {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 20px;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/* About & Recent Posts Layout */
-.content-wrapper {
+main h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* About and Recent Posts Section */
+.content {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
 }
 
-.about-section,
+.about,
 .recent-posts {
-    width: 48%;
+    width: 45%;
+}
+
+.about h2,
+.recent-posts h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.about p {
+    text-align: left;
+}
+
+.recent-posts ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.recent-posts ul li {
+    margin-bottom: 10px;
+}
+
+.recent-posts a {
+    color: #33ff33;
+    text-decoration: none;
+}
+
+.recent-posts a:hover {
+    color: white;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 20px 0;
+    margin-top: 20px;
     font-size: 14px;
 }
+
 
 
 
