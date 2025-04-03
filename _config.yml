@@ -6,4 +6,6 @@ url: "https://samarthpohekar.github.io/"
 theme: minima
 plugins:
    - jekyll-feed
+include:
+   - assets/css/style.css
 
