@@ -7,41 +7,48 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <header>
-        <h1>{{ site.title }}</h1>
-       <nav>
-         <ul class="nav-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/contact">Contact</a></li>
-         </ul>
-       </nav>
+    <div class="container">
+        <header>
+            <h1>{{ site.title }}</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    </header>
+        <main>
+            <h2>{{ page.title }}</h2>
+            {{ content }}
+        </main>
 
-    <main>
-        {{ content }}
-    </main>
+        <div class="content-wrapper">
+            <section class="about-section">
+                <h2>About</h2>
+                <p>{{ site.about }}</p>
+                <a href="/about">Learn More</a>
+            </section>
 
-    <aside>
-        <h2>About</h2>
-        <p>{{ site.about }}</p>
+            <section class="recent-posts">
+                <h2>Recent Posts</h2>
+                <ul>
+                    {% for post in site.posts limit:2 %}
+                    <li>
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        <br>{{ post.date | date: "%B %d, %Y" }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
 
-        <h2>Recent Posts</h2>
-        <ul>
-            {% for post in site.posts limit:2 %}
-            <li>
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                <br>{{ post.date | date: "%B %d, %Y" }}
-            </li>
-            {% endfor %}
-        </ul>
-    </aside>
-
-    <footer>
-        <p>© 2025 Samarth Pohekar, All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>© 2025 Samarth Pohekar, All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
 
