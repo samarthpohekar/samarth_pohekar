@@ -2,6 +2,8 @@ title: "Samarth Pohekar"
 description: "Exploring the World of Ethical Hacking & Bug Bounties"
 author: "Samarth Pohekar"
 baseurl: ""
-url: "https://samarthpohekar.github.io"
+url: "https://samarthpohekar.github.io/samarth_pohekar"
 theme: null
+plugins:
+   - jekyll-feed
 
