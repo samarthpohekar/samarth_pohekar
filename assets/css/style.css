@@ -1,33 +1,38 @@
+/* General Styles */
 body {
-    background-color: #0d0d0d;
-    color: #33ff33;
-    font-family: "Courier New", Courier, monospace;
+    font-family: Arial, sans-serif;
+    background-color: #111;  /* Dark Background */
+    color: white;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
-header h1 a {
-    color: #00ff00;
-    text-decoration: none;
-}
-
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-}
-
-footer {
+/* Header Styles */
+header {
+    background-color: #222;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px;
-    color: #666;
+    border-bottom: 2px solid #00ff00;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #00ff00; /* Green text */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #222;
+    padding: 10px 0;
+}
+
 .nav-menu {
     list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: right; /* Aligns to the right */
+    justify-content: center;  /* Center navigation links */
     gap: 20px;
+    padding: 0;
 }
 
 .nav-menu li {
@@ -36,11 +41,70 @@ footer {
 
 .nav-menu a {
     text-decoration: none;
-    color: #33ff33;
+    color: white;
     font-weight: bold;
-    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-menu a:hover {
-    color: #66ff66;
+    color: #00ff00; /* Green on hover */
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Blog Content Section */
+.content {
+    width: 65%;
+}
+
+/* Sidebar Section */
+aside {
+    width: 30%;
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+aside h2 {
+    color: #00ff00; /* Green Titles */
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-top: 2px solid #00ff00;
+}
+
+/* Links */
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
