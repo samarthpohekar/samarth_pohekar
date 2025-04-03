@@ -8,4 +8,6 @@ plugins:
    - jekyll-feed
 include:
    - assets/css/style.css
+   
+permalink: /blog/:title/
 
