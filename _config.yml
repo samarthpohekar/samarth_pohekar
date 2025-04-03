@@ -3,7 +3,7 @@ description: "Exploring the World of Ethical Hacking & Bug Bounties"
 author: "Samarth Pohekar"
 baseurl: "samarth_pohekar/"
 url: "https://samarthpohekar.github.io/"
-theme: minima
+theme: null
 plugins:
    - jekyll-feed
 include:
