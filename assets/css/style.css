@@ -5,40 +5,33 @@ body {
     font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
-}
-
-/* Remove unwanted box */
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
+    text-align: center;
 }
 
 /* Header */
 header {
-    text-align: center;
-    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
 }
 
 header h1 {
     font-size: 28px;
     font-weight: bold;
+    margin: 0;
 }
 
 /* Navigation Bar */
-nav {
-    text-align: right;
-    margin-top: -30px; /* Moves navigation up */
-}
-
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -53,8 +46,10 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
     text-align: center;
-    padding: 20px 0;
 }
 
 main h2 {
@@ -68,30 +63,25 @@ main h2 {
     justify-content: space-between;
     align-items: flex-start;
     width: 80%;
-    margin: auto;
-    padding-top: 20px;
+    max-width: 900px;
+    margin: 40px auto;
 }
 
 .about,
 .recent-posts {
     width: 45%;
+    text-align: left;
 }
 
 .about h2,
 .recent-posts h2 {
     font-size: 20px;
     font-weight: bold;
-    text-align: left;
-}
-
-.about p {
-    text-align: left;
 }
 
 .recent-posts ul {
     list-style: none;
     padding: 0;
-    text-align: left;
 }
 
 .recent-posts ul li {
@@ -109,11 +99,10 @@ main h2 {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 14px;
 }
+
 
 
 
