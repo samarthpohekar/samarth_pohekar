@@ -79,20 +79,21 @@ main.hero p {
     width: 90%; /* Increase width to allow more centering */
     max-width: 1000px; /* Adjust max-width accordingly */
     margin: 40px auto; /* Keep auto margins for overall centering */
-    padding-left: 10%; /* Add left padding to push content to the right */
+    padding-left: 15%; /* Increased left padding to push content more right */
 }
 
 .about-section {
     width: 40%;
     text-align: left;
     padding: 20px;
-    margin-right: 5%; /* Adjust spacing between sections */
+    margin-right: 0%; /* Reduced right margin to allow more shift */
 }
 
 .recent-posts {
     width: 40%;
     text-align: left;
     padding: 20px;
+    margin-left: 5%; /* Added a small left margin to create more separation */
 }
 
 .about-section h2,
