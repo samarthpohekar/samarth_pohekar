@@ -57,24 +57,24 @@ main.hero {
     max-width: 800px;
     margin: 50px auto;
     text-align: center;
-    padding: 80px 20px; /* Increased padding */
+    padding: 80px 20px;
 }
 
 main.hero h2 {
-    font-size: 2.5em; /* Larger heading */
-    margin-bottom: 20px; /* Space below heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 main.hero p {
-    font-size: 1.1em; /* Slightly larger paragraph */
-    line-height: 1.8; /* Increased line height */
-    margin-top: 30px; /* Space above paragraph */
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-top: 30px;
 }
 
 /* About and Recent Posts Section */
 .content-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* Keep space-around for overall distribution */
     align-items: flex-start;
     width: 80%;
     max-width: 900px;
@@ -83,9 +83,13 @@ main.hero p {
 
 .about-section,
 .recent-posts {
-    width: 40%; /* Reduced width */
+    width: 40%;
     text-align: left;
     padding: 20px;
+}
+
+.recent-posts {
+    margin-left: 5%; /* Add a left margin to push it to the right */
 }
 
 .about-section h2,
@@ -122,5 +126,5 @@ a {
 
 a:hover {
     color: white;
-    text-decoration: underline; /* Added underline for clarity */
+    text-decoration: underline;
 }
