@@ -74,22 +74,25 @@ main.hero p {
 /* About and Recent Posts Section */
 .content-wrapper {
     display: flex;
-    justify-content: space-around; /* Keep space-around for overall distribution */
+    /* justify-content: flex-start; */ /* Try flex-start and manual margin */
     align-items: flex-start;
     width: 80%;
     max-width: 900px;
     margin: 40px auto;
 }
 
-.about-section,
+.about-section {
+    width: 40%;
+    text-align: left;
+    padding: 20px;
+    margin-right: 10%; /* Add right margin to the About section */
+}
+
 .recent-posts {
     width: 40%;
     text-align: left;
     padding: 20px;
-}
-
-.recent-posts {
-    margin-left: 5%; /* Add a left margin to push it to the right */
+    /* margin-left: auto; */ /* Another way to push to the right */
 }
 
 .about-section h2,
