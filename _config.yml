@@ -8,6 +8,8 @@ plugins:
    - jekyll-feed
 include:
    - assets/css/style.css
+   - images
+   - static_files
    
 permalink: /blog/:title/
 about: "I’m Samarth Pohekar, a security enthusiast with a focus on ethical hacking, bug bounty hunting, and information security. I enjoy researching vulnerabilities and helping to secure applications and systems."
