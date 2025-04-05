@@ -133,7 +133,7 @@ Your website will now be live at:
 
 ```
 
-![jekyll](/assets/images/jekyll.png)
+![jekyll]({{ "/assets/images/jekyll.png" | relative_url }})
 
 
 
