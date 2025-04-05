@@ -1,7 +1,3 @@
-# Jekyll Blog
-
-# Jekyll - Static Site Generator
-
 ## Introduction
 
 Hi there! 👋
@@ -137,7 +133,8 @@ Your website will now be live at:
 
 ```
 
-![Screenshot 2025-03-26 213840.png](attachment:9144a3e2-37c0-44c3-9457-f4ece5e21216:Screenshot_2025-03-26_213840.png)
+![Screenshot 2025-03-26 213840](https://github.com/user-attachments/assets/1364e001-0817-4f08-b602-fe9c1499d451)
+
 
 ## Conclusion
 
