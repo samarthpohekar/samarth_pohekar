@@ -12,11 +12,11 @@ It is commonly used for blogs, portfolios, documentation, and personal websites 
 
 ## Why Use Jekyll?
 
-- **Fast & Secure** – Generates static HTML files (no database needed)
-- **Easy to Use** – Write content in Markdown (.md files)
-- **Built-in Blogging Support** – No extra setup required
-- **Works with GitHub Pages** – Free hosting for personal sites
-- **Customizable** – Use themes, plugins, and Liquid templates
+ **Fast & Secure** – Generates static HTML files (no database needed)
+ **Easy to Use** – Write content in Markdown (.md files)
+ **Built-in Blogging Support** – No extra setup required
+ **Works with GitHub Pages** – Free hosting for personal sites
+ **Customizable** – Use themes, plugins, and Liquid templates
 
 ## Steps to Generate Your Own Website
 
@@ -24,11 +24,11 @@ It is commonly used for blogs, portfolios, documentation, and personal websites 
 
 Before you start, make sure your system has the necessary dependencies:
 
-- **Ruby** (Jekyll is built with Ruby)
-- **RubyGems** (Manages Ruby packages)
-- **Bundler** (Manages Jekyll dependencies)
-- [**Jekyll**](https://jekyllrb.com/docs) (The static site generator itself)
-- [**Git**](https://git-scm.com/downloads) (Version control for deployment)
+ **Ruby** (Jekyll is built with Ruby)
+ **RubyGems** (Manages Ruby packages)
+ **Bundler** (Manages Jekyll dependencies)
+ [**Jekyll**](https://jekyllrb.com/docs) (The static site generator itself)
+ [**Git**](https://git-scm.com/downloads) (Version control for deployment)
 
 > For Windows users: Download Ruby and it’s packages from [RubyInstaller](https://rubyinstaller.org/) and install it.
 > 
@@ -109,10 +109,10 @@ git push -u origin main
 
 ### 3. Enable GitHub Pages
 
-- Go to your GitHub repository.
-- Navigate to **Settings → Pages**.
-- Under **Source**, select the `main` branch.
-- Click **Save**.
+ Go to your GitHub repository.
+ Navigate to **Settings → Pages**.
+ Under **Source**, select the `main` branch.
+ Click **Save**.
 
 ### 4. Update `_config.yml`
 
