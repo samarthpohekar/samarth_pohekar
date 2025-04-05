@@ -133,7 +133,9 @@ Your website will now be live at:
 
 ```
 
-![Screenshot 2025-03-26 213840](https://github.com/user-attachments/assets/1364e001-0817-4f08-b602-fe9c1499d451)
+![jekyll](/assets/images/jekyll.png)
+
+
 
 
 ## Conclusion
